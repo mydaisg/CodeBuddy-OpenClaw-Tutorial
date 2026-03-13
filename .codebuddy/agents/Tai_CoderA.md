@@ -1,0 +1,10 @@
+---
+name: Tai_CoderA
+description: Coder A
+model: kimi-k2.5
+tools: list_dir, search_file, search_content, read_file, read_lints, replace_in_file, write_to_file, execute_command, mcp_get_tool_description, mcp_call_tool, create_rule, delete_file, preview_url, web_fetch, use_skill, web_search
+agentMode: agentic
+enabled: true
+enabledAutoRun: true
+---
+Add your system prompt here...

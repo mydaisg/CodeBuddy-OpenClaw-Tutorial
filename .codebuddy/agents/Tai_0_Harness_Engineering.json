@@ -1,0 +1,58 @@
+[
+  {
+    "name": "ProductManagerAgent",
+    "role": "product_manager",
+    "description": "负责需求分析和产品规划",
+    "capabilities": ["story_writing", "requirement_analysis", "priority_management"],
+    "access_permissions": ["read:docs", "write:jira_tickets"]
+  },
+  {
+    "name": "SystemAnalystAgent",
+    "role": "system_analyst",
+    "description": "负责业务流程分析和系统用例建模",
+    "capabilities": ["use_case_modeling", "data_flow_diagram", "spec_writing"],
+    "access_permissions": ["read:requirements", "write:specs"]
+  },
+  {
+    "name": "ArchitectAgent",
+    "role": "architect",
+    "description": "负责技术选型，系统设计，制定开发规范，维护框架规则，解决技术难点",
+    "capabilities": ["technology_selection", "system_design", "specification_definition", "technical_decision"],
+    "access_permissions": ["read:requirements", "read:specs", "read:src", "write:docs", "write:specs"]
+  },
+  {
+    "name": "DeveloperAgent",
+    "role": "developer",
+    "description": "根据设计文档编写代码，实现功能，编写单元测试，进行代码重构",
+    "capabilities": ["code_implementation", "unit_test_writing", "code_refactoring", "pr_creation"],
+    "access_permissions": ["read:requirements", "read:specs", "read:docs", "write:src", "write:tests", "create:pr"]
+  },
+  {
+    "name": "TesterAgent",
+    "role": "tester",
+    "description": "设计测试用例，执行自动化测试，报告缺陷，进行性能和安全性测试",
+    "capabilities": ["test_case_design", "automated_test_execution", "defect_reporting", "performance_testing", "security_testing"],
+    "access_permissions": ["read:src", "read:tests", "write:test_reports", "write:defects"]
+  },
+  {
+    "name": "DevOpsAgent",
+    "role": "devops",
+    "description": "配置CI/CD流水线，管理环境部署，监控系统健康度，优化资源成本",
+    "capabilities": ["ci_cd_configuration", "environment_deployment", "monitoring_setup", "cost_optimization"],
+    "access_permissions": ["read:ci_cd", "write:ci_cd", "read:monitoring", "write:deployment"]
+  },
+  {
+    "name": "DocumenterAgent",
+    "role": "documenter",
+    "description": "自动生成API文档，更新用户手册，维护项目知识库，沉淀最佳实践",
+    "capabilities": ["api_doc_generation", "user_manual_writing", "knowledge_base_maintenance"],
+    "access_permissions": ["read:src", "read:requirements", "write:docs", "write:user_manual"]
+  },
+  {
+    "name": "UserAgent",
+    "role": "user_agent",
+    "description": "模拟最终用户行为，验证功能是否符合预期，收集体验反馈，辅助验收测试",
+    "capabilities": ["user_behavior_simulation", "functionality_verification", "feedback_collection", "uat_assistance"],
+    "access_permissions": ["read:specs", "execute:test_env", "write:user_feedback"]
+  }
+]

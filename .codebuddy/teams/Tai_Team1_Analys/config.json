@@ -1,0 +1,33 @@
+{
+  "name": "Tai_Team1_Analys",
+  "leadAgentId": "0eabee44d52c4b559de4af1289ef1cea",
+  "workspacePath": "d:/CodeBuddy-OpenClaw-Tutorial",
+  "createdAt": "2026-03-13T09:02:49.196Z",
+  "options": {
+    "workspacePath": "d:/CodeBuddy-OpenClaw-Tutorial",
+    "isAutoTeam": false
+  },
+  "members": [
+    {
+      "memberId": "team-lead@Tai_Team1_Analys",
+      "name": "team-lead",
+      "role": "Team Lead - coordinates the team and interacts with the user"
+    },
+    {
+      "memberId": "product-manager@Tai_Team1_Analys",
+      "name": "product-manager",
+      "role": "项目需求分析"
+    },
+    {
+      "memberId": "system-analyst@Tai_Team1_Analys",
+      "name": "system-analyst",
+      "role": "系统分析建模"
+    },
+    {
+      "memberId": "architect@Tai_Team1_Analys",
+      "name": "architect",
+      "role": "技术架构设计"
+    }
+  ],
+  "isAutoTeam": false
+}
